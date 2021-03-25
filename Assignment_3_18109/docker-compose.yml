@@ -1,0 +1,19 @@
+version: "2"
+services:
+    node-cluster-1:
+        container_name: node-cluster-1
+        build: .
+        ports:
+          ["3301:3306"]
+    
+    node-cluster-2:
+        container_name: node-cluster-2
+        build: .
+        ports:
+            ["3302:3306"]
+
+    node-cluster-3:
+        container_name: node-cluster-3
+        build: .
+        ports:
+            ["3303:3306"]
